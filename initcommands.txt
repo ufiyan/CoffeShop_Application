@@ -1,0 +1,25 @@
+1. pull the postgress image to docker
+
+docker pull postgres
+
+2. create docker container
+
+docker run --name my-postgres \
+  -e POSTGRES_PASSWORD=mypassword \
+  -p 5432:5432 \
+  -d postgres
+
+
+3. move the sql init file to container
+
+docker cp dbinit.sql my-postgres:/dbinit.sql
+
+
+4. run that init file
+
+psql -h localhost -U postgres -d postgres -f dbinit.sql
+
+
+5. testing databse / you can rune queries in terminal
+
+psql -U postgres -d postgres

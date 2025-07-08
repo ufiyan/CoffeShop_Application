@@ -1,0 +1,5 @@
+copy paste email and password
+
+steveny@coffee.com   dog    manager
+jonathanks@coffee.com    cat   manger and baritsa
+sandrao@coffee.com     fish    barista
